@@ -53,3 +53,10 @@ api_v1.include_router(sessions.router, prefix="/sessions", tags=["sessions"])
 api_v1.include_router(exams.router, prefix="/exams", tags=["exams"])
 api_v1.include_router(results.router, prefix="/results", tags=["results"])
 app.include_router(api_v1)
+
+
+if __name__ == "__main__":
+    import os
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
