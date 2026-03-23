@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'exam-grader/frontend/**'
+      - '.github/workflows/deploy-frontend.yml'
 
 permissions:
   contents: read
