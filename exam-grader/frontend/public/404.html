@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // GitHub Pages SPA redirect hack
+      var path = window.location.pathname.replace('/exam-grader', '') || '/';
+      sessionStorage.setItem('redirect', path);
+      window.location.replace('/exam-grader/');
+    </script>
+  </head>
+  <body></body>
+</html>
