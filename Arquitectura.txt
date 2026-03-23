@@ -1,0 +1,34 @@
+exam-grader/
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── v1/
+│   │   │   │   ├── auth.py
+│   │   │   │   ├── exams.py
+│   │   │   │   ├── grading.py
+│   │   │   │   └── vision.py
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   ├── security.py
+│   │   │   └── database.py
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── exam.py
+│   │   │   └── result.py
+│   │   ├── services/
+│   │   │   ├── vision_service.py
+│   │   │   ├── grading_service.py
+│   │   │   └── claude_service.py
+│   │   └── schemas/
+│   ├── requirements.txt
+│   └── main.py
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── package.json
+├── docs/
+│   └── architecture.md
+└── docker-compose.yml
